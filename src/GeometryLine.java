@@ -7,14 +7,20 @@ public class GeometryLine {
         System.out.println("Enter the value of Co-ordinates x1, y1, x2, y2: ");
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter x1: ");
-        int x1=sc.nextInt();
+        Integer x1=sc.nextInt();
         System.out.println("Enter y1: ");
-        int y1=sc.nextInt();
+        Integer y1=sc.nextInt();
         System.out.println("Enter x2: ");
-        int x2=sc.nextInt();
+        Integer x2=sc.nextInt();
         System.out.println("Enter y2: ");
-        int y2=sc.nextInt();
+        Integer y2=sc.nextInt();
         double length = Math.sqrt((x2-x1)^2 + (y2-y1)^2);
         System.out.println("Length Of Line is:"+length);
+
+
+        boolean result1 = x1.equals(y1);
+        System.out.println("Result of equals()="+result1);
+        boolean result2 = x2.equals(y2);
+        System.out.println("Result of equals()="+result2);
     }
 }
